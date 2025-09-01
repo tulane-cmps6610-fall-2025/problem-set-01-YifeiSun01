@@ -71,6 +71,28 @@ which cannot hold for large $n$ since $\log n / \log\log n \to \infty$. Hence $n
 
   - 1d
 
+Yes. 
+
+Choose $c=1$ and $n_0=16$. First check at $n=16$ (any logarithm base is fine up to a constant):
+
+$$ 16^{1.01} > 16 = (\log_2 16)^2. $$
+
+Now define $f(n)=\dfrac{n^{1.01}}{(\log n)^2}$ with natural logarithm in the denominator (bases differ by constants only). Then
+
+$$ \frac{d}{dn}\big(\ln f(n)\big)=\frac{1.01}{n}-\frac{2}{n\ln n}=\frac{1}{n}\!\left(1.01-\frac{2}{\ln n}\right). $$
+
+Hence $f'(n)\ge 0$ whenever $\ln n \ge \dfrac{2}{1.01}$, i.e. for all $n\ge 8$. Therefore $f(n)$ is increasing on $[8,\infty)$, so for all $n\ge16$,
+
+$$ \frac{n^{1.01}}{(\log n)^2}\ \ge\ \frac{16^{1.01}}{(\log 16)^2}\ >\ 1. $$
+
+Thus, for all $n\ge16$,
+
+$$ n^{1.01} \ge 1\cdot(\log n)^2, $$
+
+which (with $c=1,\ n_0=16$) proves
+
+$$ n^{1.01} \in \Omega\!\big((\log n)^2\big). $$
+
   - 1e
 
   - 1f
