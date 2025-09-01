@@ -155,11 +155,20 @@ a contradiction. Hence $o(g(n)) \cap \omega(g(n)) = \varnothing$. $\square$
   - 2b
 
 If there is no typo, the foo just gives the larger value out of a and b.
+
 If the y in the function foo returned is actually x, the foo gives the gcd of a and bm using Euclid's algorithm.
 
   - 2c
 
 
+
+Work/Span of `foo` (Euclid’s GCD; unit-cost arithmetic)
+
+$$ W(n) = T_1 = \Theta(\log n) $$
+
+$$ S(n) = T_\infty = \Theta(\log n) $$
+
+$$n=max(a,b)$$
 
 3. **Parallelism and recursion**
 
