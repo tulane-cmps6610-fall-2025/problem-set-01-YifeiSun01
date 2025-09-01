@@ -120,7 +120,7 @@ $$ f(n)\ge f(n_0)=\frac{\sqrt{e^6}}{6^3}=\frac{e^3}{216}\approx 0.0929. $$
 
 Therefore, choosing $c=0.09$ and $n_0=404$,
 
-$$ \sqrt{n} \ge c\,(\log n)^3 \quad\text{for all } n\ge n_0, $$
+$$ \sqrt{n} \ge c (\log n)^3 \quad\text{for all } n\ge n_0, $$
 
 which proves $\sqrt{n}\in\Omega((\log n)^3)$.
 
