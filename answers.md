@@ -170,6 +170,53 @@ $$ S(n) = T_\infty = \Theta(\log n) $$
 
 $$n=max(a,b)$$
 
+If here we mean the literal pseudocode which is finding the larger value out of a and b
+
+$$ W(n) = T_1 = \Theta(n) $$
+
+$$ S(n) = T_\infty = \Theta(n) $$
+
+$$n=min(a,b)$$
+
+Because we can construct a worst case, like the following  
+
+Let the first step fix the larger number as
+
+$$ y = \operatorname{lcm}(1,2,\dots,m) - 1 $$
+
+and set the other parameter (the current divisor/remainder) to
+
+$$ r_0 = m. $$
+
+Since every integer $1 \le r \le m$ divides $\operatorname{lcm}(1,\dots,m)$, we have
+
+$$ \operatorname{lcm}(1,\dots,m) \equiv 0 \pmod r \;\Rightarrow\; y = \operatorname{lcm} - 1 \equiv -1 \pmod r. $$
+
+The congruence $a \equiv -1 \pmod r$ means the remainder of $a$ upon division by $r$ is $r-1$, i.e.
+
+$$ a \bmod r = r - 1. $$
+
+Therefore each step satisfies
+
+$$ r_{k+1} = y \bmod r_k = r_k - 1 \quad (k=0,1,\dots), $$
+
+so the remainder sequence is
+
+$$ m,\, m-1,\, \dots,\, 1,\, 0. $$
+
+Hence it takes exactly $m$ steps to reach $0$, i.e. the number of steps is
+
+$$ \Theta(m). $$
+
+If we denote the input size by $n \approx m$ (e.g., $n=\min(a,b)$), then
+
+$$ W(n) = \Theta(n) $$
+
+$$ S(n) = \Theta(n) $$
+
+because each step depends on the previous remainder; the critical path is the entire sequence, so the span is the same order as the number of steps.
+
+
 3. **Parallelism and recursion**
 
   - 3b
