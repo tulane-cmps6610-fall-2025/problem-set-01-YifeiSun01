@@ -24,13 +24,11 @@ Therefore, $2^{n+1} \in O(2^n)$.
 
 We claim that $2^{2^n}\notin O(2^n)$. Suppose, to the contrary, that there exist
 constants $c>0$ and $n_0$ such that for all $n\ge n_0$,
-$$
-2^{2^n}\le c\,2^n.
-$$
+$$2^{2^n}\le c\,2^n$$
+.
 Dividing by $2^n$ gives
-$$
-2^{\,2^n-n}\le c.
-$$
+$$2^{\,2^n-n}\le c$$
+.
 Since $2^n-n\to\infty$, the left-hand side tends to $\infty$, a contradiction.
 Hence $2^{2^n}\notin O(2^n)$.
 Equivalently, $\displaystyle\lim_{n\to\infty}\frac{2^{2^n}}{2^n}=\infty$,
