@@ -9,8 +9,16 @@ def foo(x):
     pass
 
 def longest_run(mylist, key):
-    ### TODO
-    pass
+    best = 0 
+    cur = 0  
+    for x in myarray:
+        if x == key:
+            cur += 1
+            if cur > best:
+                best = cur
+        else:
+            cur = 0
+    return best
 
 
 class Result:
