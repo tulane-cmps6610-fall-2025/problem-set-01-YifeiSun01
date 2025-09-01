@@ -137,7 +137,7 @@ $$ |f(n)| \le |g(n)| \quad (n\ge N_1). $$
 
 From $f \in \omega(g)$, for every $c>0$ there is $N_2$ s.t. for all $n\ge N_2$,
 
-$$ |f(n)| \ge c\,|g(n)|. $$
+$$ |f(n)| \ge c |g(n)|. $$
 
 Taking $c=2$ gives some $N_2$ with
 
@@ -145,7 +145,7 @@ $$ |f(n)| \ge 2\,|g(n)| \quad (n\ge N_2). $$
 
 Let $N=\max\{N_1,N_2\}$. Then for all $n\ge N$,
 
-$$ |f(n)| \le |g(n)| \quad\text{and}\quad |f(n)| \ge 2\,|g(n)|, $$
+$$ |f(n)| \le |g(n)| \quad\text{and}\quad |f(n)| \ge 2 |g(n)|, $$
 
 a contradiction. Hence $o(g(n)) \cap \omega(g(n)) = \varnothing$. $\square$
 
