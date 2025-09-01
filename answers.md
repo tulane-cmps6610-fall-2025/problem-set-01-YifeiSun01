@@ -95,7 +95,34 @@ $$ n^{1.01} \in \Omega \big((\log n)^2\big). $$
 
   - 1e
 
+No. 
+
+Suppose there exist $c>0$ and $n_0$ such that for all $n\ge n_0$,
+
+$$ \sqrt{n} \le c\,(\log n)^3. $$
+
+Taking logs gives
+
+$$ \tfrac12 \log n \le \log c + 3\log\log n, $$
+
+which cannot hold for large $n$ since $\log n / \log\log n \to \infty$. Hence $\sqrt{n}\notin O((\log n)^3)$.
+
   - 1f
+
+Yes. 
+Let $f(n)=\dfrac{\sqrt{n}}{(\log n)^3}$ (natural log). For $n\ge e^6$,
+
+$$ \frac{d}{dn}\ln f(n)=\frac{1}{2n}-\frac{3}{n\ln n}\ge 0, $$
+
+so $f$ is increasing on $[e^6,\infty)$. Hence with $n_0=\lceil e^6\rceil=404$,
+
+$$ f(n)\ge f(n_0)=\frac{\sqrt{e^6}}{6^3}=\frac{e^3}{216}\approx 0.0929. $$
+
+Therefore, choosing $c=0.09$ and $n_0=404$,
+
+$$ \sqrt{n} \ge c\,(\log n)^3 \quad\text{for all } n\ge n_0, $$
+
+which proves $\sqrt{n}\in\Omega((\log n)^3)$.
 
   - 1g
 
