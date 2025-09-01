@@ -208,7 +208,7 @@ Hence it takes exactly $m$ steps to reach $0$, i.e. the number of steps is
 
 $$ \Theta(m). $$
 
-If we denote the input size by $n \approx m$ (e.g., $n= \min (a,b)$), then
+If we denote the input size by $n \approx m$ (e.g., $n=min(a,b)$), then
 
 $$ W(n) = \Theta(n) $$
 
