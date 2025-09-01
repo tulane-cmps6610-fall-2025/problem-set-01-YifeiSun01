@@ -240,4 +240,5 @@ $$ S(n)=\Theta(n) $$
 $$ W(n)=\Theta(n) $$
 
 $$ S(n)=\Theta(\log n) $$
+
 4. **GCD**
