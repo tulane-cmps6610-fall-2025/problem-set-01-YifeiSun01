@@ -129,7 +129,7 @@ which proves $\sqrt{n}\in\Omega((\log n)^3)$.
 Suppose $f \in o(g)$ and $f \in \omega(g)$.  
 From $f \in o(g)$, for every $c>0$ there is $N_1$ s.t. for all $n\ge N_1$,
 
-$$ |f(n)| \le c\,|g(n)|. $$
+$$ |f(n)| \le c |g(n)|. $$
 
 Taking $c=1$ gives some $N_1$ with
 
@@ -141,7 +141,7 @@ $$ |f(n)| \ge c |g(n)|. $$
 
 Taking $c=2$ gives some $N_2$ with
 
-$$ |f(n)| \ge 2\,|g(n)| \quad (n\ge N_2). $$
+$$ |f(n)| \ge 2 |g(n)| \quad (n\ge N_2). $$
 
 Let $N=\max\{N_1,N_2\}$. Then for all $n\ge N$,
 
