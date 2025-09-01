@@ -43,8 +43,31 @@ class Result:
     
     
 def longest_run_recursive(mylist, key):
-    ### TODO
-    pass
+    # returns a Result for subarray mylist[lo:hi], half-open
+    def rec(lo, hi):
+        # empty segment
+        if lo >= hi:
+            return Result(0, 0, 0, True)
+        # single element
+        if hi - lo == 1:
+            if mylist[lo] == key:
+                return Result(1, 1, 1, True)
+            else:
+                return Result(0, 0, 0, False)
+
+        mid = (lo + hi) // 2
+        L = rec(lo, mid)
+        R = rec(mid, hi)
+
+        # combine
+        is_entire = L.is_entire_range and R.is_entire_range
+        left_size  = L.left_size  + R.left_size  if L.is_entire_range else L.left_size
+        right_size = R.right_size + L.right_size if R.is_entire_range else R.right_size
+        longest    = max(L.longest_size, R.longest_size, L.right_size + R.left_size)
+
+        return Result(left_size, right_size, longest, is_entire)
+
+    return rec(0, len(mylist)).longest_size
 
 ## Feel free to add your own tests here.
 def test_longest_run():
