@@ -182,15 +182,15 @@ Because we can construct a worst case, like the following
 
 Let the first step fix the larger number as
 
-$$ y = \operatorname{lcm}(1,2,\dots,m) - 1 $$
+$$ y = lcm(1,2,\dots,m) - 1 $$
 
 and set the other parameter (the current divisor/remainder) to
 
 $$ r_0 = m. $$
 
-Since every integer $1 \le r \le m$ divides $\operatorname{lcm}(1,\dots,m)$, we have
+Since every integer $1 \le r \le m$ divides $lcm(1,\dots,m)$, we have
 
-$$ \operatorname{lcm}(1,\dots,m) \equiv 0 \pmod r \;\Rightarrow\; y = \operatorname{lcm} - 1 \equiv -1 \pmod r. $$
+$$ lcm(1,\dots,m) \equiv 0 \pmod r \;\Rightarrow\; y = lcm - 1 \equiv -1 \pmod r. $$
 
 The congruence $a \equiv -1 \pmod r$ means the remainder of $a$ upon division by $r$ is $r-1$, i.e.
 
