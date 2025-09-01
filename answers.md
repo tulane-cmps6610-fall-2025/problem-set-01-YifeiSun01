@@ -231,6 +231,13 @@ $$ S(n) = T_\infty = \Theta(n) $$
 
   - 3d
 
+$$ W(n)=\Theta(n) $$
+
+$$ S(n)=\Theta(n) $$
+
   - 3e
-  
+
+$$ W(n)=\Theta(n) $$
+
+$$ S(n)=\Theta(\log n) $$
 4. **GCD**
