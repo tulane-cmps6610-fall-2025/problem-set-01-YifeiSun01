@@ -158,6 +158,14 @@ a contradiction. Hence $o(g(n)) \cap \omega(g(n)) = \varnothing$. $\square$
 
   - 3b
 
+work
+
+$$ W(n) = T_1 = \Theta(n) $$
+
+span
+
+$$ S(n) = T_\infty = \Theta(n) $$
+
   - 3d
 
   - 3e
