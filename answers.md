@@ -11,7 +11,7 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
   - 1a 
 
-The claim $2^{n+1} \in O(2^n)$ is correct, because there exist constants 
+Yes, because there exist constants 
 $c = 2$ and $n_0 = 1$ such that for all $n \geq 1$:
 
 $$
@@ -22,7 +22,7 @@ Therefore, $2^{n+1} \in O(2^n)$.
 
   - 1b    
 
-We claim that $2^{2^n}\notin O(2^n)$. 
+No. 
 
 Suppose, for contradiction, that $2^{2^n} \in O(2^n)$.  
 Then there exist constants $c>0$ and $n_0$ such that for all $n \ge n_0$:
@@ -56,13 +56,9 @@ $$ 2^{2^n} = \omega(2^n) $$
  
   - 1c
 
-No. Since $(\log n)^k = o(n^\varepsilon)$ for any $k,\varepsilon>0$, we have $(\log n)^2 = o(n^{1.01})$, hence
+No. 
 
-$$ \lim_{n\to\infty}\frac{n^{1.01}}{(\log n)^2}=\infty $$
-
-and therefore $n^{1.01}\notin O((\log n)^2)$.
-
-**Alternative (log-contradiction):** Suppose there exist $c>0$ and $n_0$ such that for all $n\ge n_0$,
+Suppose there exist $c>0$ and $n_0$ such that for all $n\ge n_0$,
 
 $$ n^{1.01} \le c(\log n)^2. $$
 
