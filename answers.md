@@ -99,7 +99,7 @@ No.
 
 Suppose there exist $c>0$ and $n_0$ such that for all $n\ge n_0$,
 
-$$ \sqrt{n} \le c\,(\log n)^3. $$
+$$ \sqrt{n} \le c (\log n)^3. $$
 
 Taking logs gives
 
