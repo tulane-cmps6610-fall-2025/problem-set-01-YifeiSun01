@@ -57,13 +57,19 @@ $$ 2^{2^n} = \omega(2^n) $$
   - 1c
 
 No. Since $(\log n)^k = o(n^\varepsilon)$ for any $k,\varepsilon>0$, we have $(\log n)^2 = o(n^{1.01})$, hence
+
 $$ \lim_{n\to\infty}\frac{n^{1.01}}{(\log n)^2}=\infty $$
+
 and therefore $n^{1.01}\notin O((\log n)^2)$.
 
 **Alternative (log-contradiction):** Suppose there exist $c>0$ and $n_0$ such that for all $n\ge n_0$,
+
 $$ n^{1.01} \le c(\log n)^2. $$
+
 Taking logs gives
+
 $$ 1.01\log n \le \log c + 2\log\log n, $$
+
 which cannot hold for large $n$ since $\log n / \log\log n \to \infty$. Hence $n^{1.01}\notin O((\log n)^2)$.
 
 
